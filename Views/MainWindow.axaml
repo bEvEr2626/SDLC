@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="CakeCalculator.Views.MainWindow"
+        Title="Калькулятор Тортиков (Вариант 18)" Width="460" Height="450"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid RowDefinitions="Auto, *, Auto" Margin="20">
+        <Button Grid.Row="0" Content="Ввести данные" 
+                HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" 
+                Height="40" FontSize="15" Click="OnOpenInputClick" />
+
+        <Border Grid.Row="1" Margin="0,15,0,15" Padding="15" 
+                CornerRadius="8" Background="#252526">
+            <StackPanel Spacing="10">
+                <TextBlock Text="Результаты расчетов:" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                <Separator Height="1" Background="#444444"/>
+
+                <TextBlock Name="StatusMessageText" 
+                           Foreground="#66BB6A" 
+                           FontSize="15" 
+                           FontWeight="Bold" 
+                           TextWrapping="Wrap" 
+                           IsVisible="False"/>
+
+                <TextBlock Name="TarResultText" Text="Смолы прошло через легкие: —" Foreground="#E0E0E0"/>
+                <TextBlock Name="NicotineResultText" Text="Никотина прошло через тело: —" Foreground="#E0E0E0"/>
+                <TextBlock Name="MoneyResultText" Text="Потрачено денег: —" Foreground="#E0E0E0"/>
+                
+                <Separator Height="1" Background="#444444"/>
+                <TextBlock Name="CakesResultText" Text="Можно было купить тортиков: —" Foreground="#FFB74D" FontSize="15" FontWeight="SemiBold"/>
+                <TextBlock Name="OrangesResultText" Text="Можно было купить апельсинов: —" Foreground="#81C784" FontSize="15" FontWeight="SemiBold"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
