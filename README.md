@@ -1,4 +1,4 @@
-## InternetLifeApp
+## CakeCalculator
 
 **Автор:** Липский А. В.
 
